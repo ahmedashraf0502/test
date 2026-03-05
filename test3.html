@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ahmed Ashraf | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section {
+            margin: 60px 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.2);
+        }
+
+        .about p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .about a {
+            color: #ffd369;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .about a:hover {
+            text-decoration: underline;
+        }
+
+        .clients {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .clients img {
+            width: 100%;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .clients img:hover {
+            transform: scale(1.05);
+        }
+
+        .skills ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .skills li {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .skills li:hover {
+            background: #ffd369;
+            color: #000;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.3);
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Ahmed Ashraf</h1>
+    <p>Front-End Developer | Available For Hire</p>
+</header>
+
+<div class="container">
+
+    <section class="about">
+        <div class="card">
+            <h2>About Me</h2>
+            <p>My Hour Old Price Is <del>$10</del> And The New Price Is <mark>$30</mark></p>
+            <p>
+                Visit My Profile:
+                <a href="https://www.facebook.com/share/1CFgGueaoA/" target="_blank">Facebook</a>
+            </p>
+            <p>
+                Contact Me:
+                <a href="https://wa.me/201559109660" target="_blank">WhatsApp 1</a> |
+                <a href="https://wa.me/201225519236" target="_blank">WhatsApp 2</a>
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>My Clients</h2>
+        <div class="clients">
+            <div class="card">
+                <img src="IMG_20210809_192816.jpg" alt="Client 1">
+            </div>
+            <div class="card">
+                <img src="OIP.webp" alt="Client 2">
+            </div>
+            <div class="card">
+                <img src="IMG_20210809_192816.jpg" alt="Client 3">
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Vue</li>
+            <li>Angular</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 Ahmed Ashraf | All Rights Reserved
+</footer>
+
+</body>
+</html>
